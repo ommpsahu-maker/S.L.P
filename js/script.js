@@ -127,6 +127,8 @@ localStorage.setItem("currentWorkout", workout);
 
 function startWorkout(){
 
+getTodayWorkout();   // ⭐ ADD THIS LINE
+
 let startTime = Date.now();
 
 localStorage.setItem("startTime", startTime);
@@ -162,5 +164,6 @@ function changeSplit(){
 localStorage.removeItem("slpSplit");
 
 window.location.href = "split.html";
+
 
 }
