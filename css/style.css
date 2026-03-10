@@ -1,14 +1,12 @@
 /* Page background */
 
 body{
-background-color:#000;
-color:white;
-font-family:Arial;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-margin:0;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                url("images/bg.png");
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-color: black;
 }
 
 /* Center content */
@@ -139,4 +137,5 @@ transform:scale(1.03);
 
 .exercise-card input{
 margin-right:8px;
+
 }
