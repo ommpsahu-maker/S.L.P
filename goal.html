@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SLP Goals</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="intro">
+
+<h1>SLP</h1>
+<h2>Select Your Fitness Goal</h2>
+
+<div class="goals">
+
+<div class="goal-card" onclick="selectGoal('Weight Loss')">
+🏃 Weight Loss
+</div>
+
+<div class="goal-card" onclick="selectGoal('Muscle Gain')">
+💪 Muscle Gain
+</div>
+
+<div class="goal-card" onclick="selectGoal('Weight Gain')">
+⚖ Weight Gain
+</div>
+
+<div class="goal-card" onclick="selectGoal('Ripped Physique')">
+🔥 Ripped Physique
+</div>
+
+<div class="goal-card" onclick="selectGoal('Strength Training')">
+🏋 Strength Training
+</div>
+
+<div class="goal-card" onclick="selectGoal('Bulking')">
+🍖 Bulking
+</div>
+
+<div class="goal-card" onclick="selectGoal('Cutting')">
+✂ Cutting
+</div>
+
+
+
+</div>
+<script>
+
+function selectGoal(goal){
+
+localStorage.setItem("slpGoal", goal);
+
+
+
+window.location.href = "level.html";
+
+}
+
+</script>
+
+</body>
+</html>

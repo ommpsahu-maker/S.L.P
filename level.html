@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SLP Training Level</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="intro">
+
+<h1>SLP</h1>
+<h2>Select Your Training Level</h2>
+
+<div class="goals">
+
+<div class="goal-card" onclick="selectLevel('Beginner')">
+Beginner
+<p>Start your fitness journey</p>
+</div>
+
+<div class="goal-card" onclick="selectLevel('Intermediate')">
+Intermediate
+<p>Build strength and muscle</p>
+</div>
+
+<div class="goal-card" onclick="selectLevel('Advanced')">
+Advanced
+<p>High intensity training</p>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function selectLevel(level){
+
+localStorage.setItem("slpLevel", level);
+
+window.location.href="split.html";
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SLP Training Split</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="intro">
+
+<h1>SLP</h1>
+<h2>Choose Your Training Split</h2>
+
+<div class="goals">
+
+<div class="goal-card" onclick="selectSplit('PPL')">
+<h3>Push Pull Legs</h3>
+<p>Push • Pull • Legs bodybuilding routine</p>
+</div>
+
+<div class="goal-card" onclick="selectSplit('UpperLower')">
+<h3>Upper Lower Split</h3>
+<p>Upper body and lower body training</p>
+</div>
+
+<div class="goal-card" onclick="selectSplit('Hybrid')">
+<h3>PPL + Upper Lower</h3>
+<p>Hybrid hypertrophy training program</p>
+</div>
+
+<div class="goal-card" onclick="selectSplit('BroSplit')">
+<h3>Bro Split</h3>
+<p>One muscle group per day</p>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function selectSplit(split){
+
+localStorage.setItem("slpSplit", split);
+
+window.location.href="workout.html";
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SLP Login</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="intro">
+
+<h1>SLP</h1>
+<h2>Login</h2>
+
+<input type="text" id="username" placeholder="Username"><br><br>
+
+<input type="password" id="password" placeholder="Password"><br><br>
+
+<p style="font-size:12px; opacity:0.7;">
+Password must contain uppercase, lowercase, number and special character.
+</p>
+
+<button onclick="login()">Login</button>
+
+</div>
+
+<script>
+
+function login(){
+
+let user = document.getElementById("username").value;
+let pass = document.getElementById("password").value;
+
+let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/;
+
+if(user === ""){
+alert("Please enter username");
+return;
+}
+
+if(!passwordPattern.test(pass)){
+alert("Password must be 8 characters and include uppercase, lowercase, number and special character");
+return;
+}
+
+localStorage.setItem("slpUser", user);
+
+window.location.href = "goal.html";
+
+}
+
+</script>
+
+</body>
+</html>
